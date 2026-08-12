@@ -1,21 +1,16 @@
 /* ------- Global styles ------- */
 
   body { 
-    background: #F1EFED; 
-    font-family: 'Manrope', sans-serif;
-    color:#19171A;
-    font-size: 16px;
+    background: #F1EAE0; 
+    font-family: 'Golos Text', sans-serif;
+    color:#05381D;
     line-height: 1.8em;
-    font-weight: 500;
-  }
-
-  ::selection {
-    background: #19171A;
-    color:  #F6F6F6; 
+    font-weight: 600;
   }
 
   p {
-    line-height: 1.7em;
+    font-size: 24px;
+    line-height: 1.2em;
   }
 
   a {
@@ -26,20 +21,13 @@
 
   h1 {
     /* font-size: calc(1.6rem + 1.4vw); */
-    font-size: 50px;
-    font-weight: 400;
+    font-size: 80px;
+    font-weight: 600;
   }
 
   .job-row {
     margin-top: 16px;
     margin-bottom: 88px;
-  }
-
-  .job-videos {
-    border-radius:4px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
   }
 
 
