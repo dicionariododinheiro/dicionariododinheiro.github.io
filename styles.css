@@ -17,6 +17,25 @@
     color:#19171A;
   }
 
+  .carousel-control-prev,
+  .carousel-control-next {
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      width: 44px;
+      height: 44px;
+      background-color: rgba(5,56,29,0.12);
+      border-radius: 100%;
+      padding: 12p;
+      font-size: 16px;
+
+  }
+
+  .carousel:hover .carousel-control-prev,
+  .carousel:hover .carousel-control-next {
+      opacity: 1;
+      color: #05381D; 
+  }
+
 /* ------- home ------- */ 
 
   h1 {
