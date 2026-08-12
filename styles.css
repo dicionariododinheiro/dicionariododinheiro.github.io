@@ -17,23 +17,29 @@
     color:#19171A;
   }
 
+  .arrows {
+    vertical-align: middle;
+    margin: 0px -12px; 
+  }
+
   .carousel-control-prev,
   .carousel-control-next {
       opacity: 0;
       transition: opacity 0.2s ease;
-      width: 44px;
-      height: 44px;
-      background-color: rgba(5,56,29,0.12);
-      border-radius: 100%;
-      padding: 12p;
-      font-size: 16px;
 
   }
 
   .carousel:hover .carousel-control-prev,
   .carousel:hover .carousel-control-next {
       opacity: 1;
-      color: #05381D; 
+      color: #05381D;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(5,56,29,0.12);
+      border-radius: 100%;
+      padding: 12px;
+      box-sizing: border-box;
+      font-size: 16px; 
   }
 
 /* ------- home ------- */ 
