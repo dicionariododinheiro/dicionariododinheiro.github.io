@@ -130,11 +130,12 @@
   letter-spacing: -3%; 
 }
 
+.job-row > div {
+    background: red;
+}
+
 
 /* Alterar o gutter (espaçamento entre colunas) */
-  .container {
-  gap: 4px; 
-  }
 
   .row {
     --bs-gutter-x: 8px; /* Espaçamento horizontal */
