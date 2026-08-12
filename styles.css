@@ -20,15 +20,15 @@
 /* --- carousel arrows --- */
 
   .arrows {
-    vertical-align: middle;
-    margin: 0px -12px; 
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
   }
 
   .carousel-control-prev,
   .carousel-control-next {
       opacity: 0;
       transition: opacity 0.2s ease;
-
   }
 
   .carousel:hover .carousel-control-prev,
@@ -44,16 +44,19 @@
       font-size: 16px; 
   }
 
-  .carousel-indicators button {
+  .carousel-indicators [data-bs-target] {
     width: 8px;
     height: 8px;
     border-radius: 50%;
     border: 0;
-    background-color: rgba(5,56,29,0.20);
+    background-color: rgba(5,56,29,0.30);
   }
 
   .carousel-indicators button.active {
-    background-color: #05381D; 
+    background-color: #05381D;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
   }
 
 /* ------- home ------- */ 
