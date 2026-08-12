@@ -23,7 +23,10 @@
     /* font-size: calc(1.6rem + 1.4vw); */
     font-size: 80px;
     font-weight: 600;
-    letter-spacing: -5%; 
+    letter-spacing: -5%;
+    display: inline-block; 
+    padding: 24px 0px; 
+    border: 4px 0px; 
   }
 
   .job-row {
