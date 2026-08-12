@@ -17,6 +17,8 @@
     color:#19171A;
   }
 
+/* --- carousel arrows --- */
+
   .arrows {
     vertical-align: middle;
     margin: 0px -12px; 
@@ -40,6 +42,13 @@
       padding: 12px;
       box-sizing: border-box;
       font-size: 16px; 
+  }
+
+  .carousel-indicators button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 0;
   }
 
 /* ------- home ------- */ 
@@ -100,14 +109,18 @@
 }
 
 
-/* Alterar o gutter (espaçamento entre colunas) 
-.row {
-  --bs-gutter-x: 8px; /* Espaçamento horizontal 
-  --bs-gutter-y: 8px; /* Espaçamento vertical 
-}
-*/
+/* Alterar o gutter (espaçamento entre colunas) */
+  .container {
+  gap: 4px; 
+  }
+
+  .row {
+    --bs-gutter-x: 8px; /* Espaçamento horizontal */
+    --bs-gutter-y: 8px; /* Espaçamento vertical */
+  }
+
   
-  /* Ajustar a largura do container em diferentes breakpoints */
+/* Ajustar a largura do container em diferentes breakpoints */
   @media (max-width: 767px) {  /* sm */
       .container {
           max-width: 738px;
