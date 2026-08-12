@@ -30,6 +30,40 @@
     margin-bottom: 88px;
   }
 
+/* ------ cards ------ */ 
+
+.cover-card {
+  background-color: #FEF6EE;
+  padding: 32px; 
+  border-radius: 32px; 
+  height: 530px; 
+}
+
+.cover-card .tag { 
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 48px; 
+}
+
+.cover-card img {
+  width: 100%; 
+  height: 206px; 
+}
+
+.cover-card h2 { 
+  margin-top: 32px;
+  font-size: 28px;
+  color: #C4BBFE;
+  line-heigh: 0.94em; 
+}
+
+.cover-card h2 strong {
+  font-size: 36px;
+  color: #05381D; 
+  padding-top: 8px; 
+  display: block; 
+}
+
 
 /* Alterar o gutter (espaçamento entre colunas) */
   .row {
