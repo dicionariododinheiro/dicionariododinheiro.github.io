@@ -20,15 +20,16 @@
 /* --- carousel arrows --- */
 
   .arrows {
-    top: 50%;
-    bottom: auto;
-    transform: translateY(-50%);
+
   }
 
   .carousel-control-prev,
   .carousel-control-next {
       opacity: 0;
       transition: opacity 0.2s ease;
+      top: 50%;
+      bottom: auto;
+      transform: translateY(-50%);
   }
 
   .carousel:hover .carousel-control-prev,
@@ -117,6 +118,16 @@
   display: block;
   font-weight: 700;
   letter-spacing: -2%; 
+}
+
+.content-card p { 
+  margin-top: 32px;
+  padding: 12px;
+  font-size: 24px;
+  color: #05381D;
+  line-height: 1.2em;
+  font-weight: 600;
+  letter-spacing: -3%; 
 }
 
 
