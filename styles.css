@@ -59,14 +59,14 @@
   margin-top: 32px;
   font-size: 28px;
   color: #C4BBFE;
-  line-heigh: 0.94em;
+  line-height: 0.94em;
   font-weight: 600;
   letter-spacing: -3%; 
 }
 
 .cover-card h2 strong {
   font-size: 36px;
-  line-heigh: 0.94em;
+  line-height: 0.94em;
   color: #05381D; 
   padding-top: 8px; 
   display: block;
@@ -75,11 +75,12 @@
 }
 
 
-/* Alterar o gutter (espaçamento entre colunas) */
+/* Alterar o gutter (espaçamento entre colunas) 
 .row {
-  --bs-gutter-x: 8px; /* Espaçamento horizontal */
-  --bs-gutter-y: 8px; /* Espaçamento vertical */
+  --bs-gutter-x: 8px; /* Espaçamento horizontal 
+  --bs-gutter-y: 8px; /* Espaçamento vertical 
 }
+*/
   
   /* Ajustar a largura do container em diferentes breakpoints */
   @media (max-width: 767px) {  /* sm */
