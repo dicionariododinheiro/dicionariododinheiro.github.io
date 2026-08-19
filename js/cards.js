@@ -47,7 +47,7 @@ const cards = [
             },
 
         ]
-    }
+    },
 
     {
         titulo: "[cartão de crédito]",
@@ -122,7 +122,7 @@ const cards = [
                 texto: "Esse dinheiro pode voltar como saldo na conta ou desconto na fatura.."
             },
         ]
-    }
+    },
 
     {
         titulo: "[cartão de crédito]",
@@ -166,7 +166,7 @@ const cards = [
             },
 
         ]
-    }
+    },
 
     {
         titulo: "[cartão de crédito]",
