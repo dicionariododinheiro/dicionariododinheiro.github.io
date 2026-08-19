@@ -1,9 +1,9 @@
 /* ------- Global styles ------- */
 
   body { 
-    background: #F1EAE0; 
+    background: #FFFBF7; 
     font-family: 'Golos Text', sans-serif;
-    color:#05381D;
+    color:#000000;
     line-height: 1.8em;
     font-weight: 600;
   }
@@ -86,7 +86,7 @@
 /* ------ cards ------ */ 
 
 .cover-card {
-  background-color: #FEF6EE;
+  background-color: #F2ECE5;
   padding: 20px; 
   border-radius: 32px; 
   height: 530px;
@@ -106,17 +106,15 @@
   height: 206px; 
 }
 
-.cover-card h2 { 
-  margin-top: 32px;
-  padding: 12px;
+.cover-card h2 {
   font-size: 28px;
-  color: #C4BBFE;
+  color: #68DC20;
   line-height: 0.94em;
   font-weight: 600;
   letter-spacing: -3%; 
 }
 
-.cover-card h2 strong {
+.slide-subtitulo {
   font-size: 36px;
   line-height: 0.94em;
   color: #05381D; 
@@ -124,6 +122,19 @@
   display: block;
   font-weight: 700;
   letter-spacing: -2%; 
+}
+
+.carousel-header {
+  display: inline-block;
+}
+
+.carousel-title {
+  width: 50%;
+}
+
+.carousel-counter {
+  width: 50%;
+  text-align: right;
 }
 
 .content-card p { 
