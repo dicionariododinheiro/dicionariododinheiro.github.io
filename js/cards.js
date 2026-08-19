@@ -1,21 +1,25 @@
 const cards = [
     {
-        titulo: "Inflação",
+        titulo: "[cartão de crédito]",
 
         slides: [
-            {
-                imagem: "images/inflacao/01.png",
-                texto: "Inflação é o aumento geral dos preços ao longo do tempo."
+            {   
+                tipo: "capa",
+                imagem: "images/cartao/01.png",
+                subtitulo: "O que é",
+                titulo: "anuidade\ndo cartão?"
+            },
+
+            {   
+                tipo: "texto",
+                imagem: "images/cartao/02.png",
+                texto: "É uma taxa cobrada pelo banco apenas para você ter o cartão de crédito."
             },
 
             {
-                imagem: "images/inflacao/02.png",
-                texto: "Quando os preços sobem, o dinheiro compra menos."
-            },
-
-            {
-                imagem: "images/inflacao/03.png",
-                texto: "O IPCA é o principal índice usado para medir a inflação."
+                tipo: "texto",
+                imagem: "images/cartao/03.png",
+                texto: "Outro texto aqui..."
             }
         ]
     }

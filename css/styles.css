@@ -45,6 +45,12 @@
       font-size: 16px; 
   }
 
+  .carousel-indicators {
+    position: relative;
+    justify-content: left;
+    margin: 0px;
+  }
+
   .carousel-indicators [data-bs-target] {
     width: 8px;
     height: 8px;
