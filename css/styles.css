@@ -100,7 +100,7 @@
 .cover-card img {
   width: 230px; 
   height: auto; 
-  display: block;
+  display: inline-block;
   padding-top: 40px;
   padding-bottom: 32px;
 }
@@ -123,7 +123,10 @@
 }
 
 .carousel-header {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .carousel-title {
@@ -147,6 +150,7 @@
   line-height: 1.2em;
   font-weight: 600;
   letter-spacing: -3%; 
+  text-align: left;
 }
 
 .slide-content {
@@ -155,13 +159,6 @@
 
 .slide-text {
   text-align: left;
-}
-
-.cover-card {
-    background: #FEF6EE;
-    padding: 20px;
-    border-radius: 32px;
-    min-height: 300px;
 }
 
 
