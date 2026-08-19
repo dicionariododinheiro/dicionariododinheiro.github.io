@@ -103,10 +103,11 @@
 .cover-card img {
   width: 100%; 
   padding: 12px;
-  height: 206px; 
+  height: 230px; 
+  display: block;
 }
 
-.cover-card h2 {
+.slide-subtitulo {
   font-size: 28px;
   color: #68DC20;
   line-height: 0.94em;
@@ -114,7 +115,7 @@
   letter-spacing: -3%; 
 }
 
-.slide-subtitulo {
+.cover-card h2 {
   font-size: 36px;
   line-height: 0.94em;
   color: #05381D; 
