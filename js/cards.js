@@ -1,14 +1,10 @@
 const cards = [
     {
-        titulo: "Inflação",
+        titulo: "TESTE",
         slides: [
             {
-                imagem: "images/inflacao/01.png",
-                texto: "Inflação é o aumento geral dos preços."
-            },
-            {
-                imagem: "images/inflacao/02.png",
-                texto: "Quando os preços sobem, o dinheiro compra menos."
+                imagem: "images/teste.png",
+                texto: "Funcionou!"
             }
         ]
     }
