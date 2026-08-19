@@ -101,10 +101,11 @@
 }
 
 .cover-card img {
-  width: 100%; 
-  padding: 12px;
-  height: 230px; 
+  width: 230px; 
+  height: auto; 
   display: block;
+  padding-top: 40px;
+  padding-bottom: 32px;
 }
 
 .slide-subtitulo {
