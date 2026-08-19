@@ -49,15 +49,10 @@ cards.forEach((card, cardIndex) => {
                                 >
 
                                 <div class="slide-text">
-
                                     <span class="slide-subtitulo">
                                         ${slide.subtitulo}
                                     </span>
-
-                                    <h2>
-                                        ${slide.titulo}
-                                    </h2>
-
+                                    <h2>${slide.titulo}</h2>
                                 </div>
 
                             </div>

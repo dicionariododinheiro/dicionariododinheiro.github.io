@@ -57,7 +57,7 @@ const cards = [
                 tipo: "capa",
                 imagem: "images/cartao-de-credito/anuidade-cartao_01.png",
                 subtitulo: "O que é",
-                titulo: "benefício do cartão?"
+                titulo: "benefício \ndo cartão?"
             },
 
             {   
@@ -95,7 +95,7 @@ const cards = [
                 tipo: "capa",
                 imagem: "images/cartao-de-credito/anuidade-cartao_01.png",
                 subtitulo: "O que é",
-                titulo: "ganhar cashback?"
+                titulo: "ganhar \ncashback?"
             },
 
             {   
@@ -132,7 +132,7 @@ const cards = [
                 tipo: "capa",
                 imagem: "images/cartao-de-credito/anuidade-cartao_01.png",
                 subtitulo: "O que é",
-                titulo: "comprar à vista?"
+                titulo: "comprar \nà vista?"
             },
 
             {   
@@ -176,7 +176,7 @@ const cards = [
                 tipo: "capa",
                 imagem: "images/cartao-de-credito/anuidade-cartao_01.png",
                 subtitulo: "O que é",
-                titulo: "parcelar a compra?"
+                titulo: "parcelar \na compra?"
             },
 
             {   
