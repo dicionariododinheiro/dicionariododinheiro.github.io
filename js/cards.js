@@ -44,7 +44,7 @@ const cards = [
                 tipo: "texto",
                 imagem: "images/cartao-de-credito/anuidade-cartao_01.png",
                 texto: "Só pague se os benefícios do cartão compensarem o valor da anuidade"
-            },
+            }
 
         ]
     },
@@ -82,7 +82,7 @@ const cards = [
                 tipo: "texto",
                 imagem: "images/cartao-de-credito/anuidade-cartao_01.png",
                 texto: "Mas o queridinho do momento é receber cashback a cada compra."
-            },
+            }
             
         ]
     }
@@ -120,7 +120,7 @@ const cards = [
                 tipo: "texto",
                 imagem: "images/cartao-de-credito/anuidade-cartao_01.png",
                 texto: "Esse dinheiro pode voltar como saldo na conta ou desconto na fatura.."
-            },
+            }
         ]
     },
 
@@ -163,7 +163,7 @@ const cards = [
                 tipo: "texto",
                 imagem: "images/cartao-de-credito/anuidade-cartao_01.png",
                 texto: "Junte o dinheiro antes de comprar e sinta a liberdade de não ter parcelas!"
-            },
+            }
 
         ]
     },
@@ -201,7 +201,7 @@ const cards = [
                 tipo: "texto",
                 imagem: "images/cartao-de-credito/anuidade-cartao_01.png",
                 texto: "Atenção: várias pequenas parcelas podem virar uma fatura enorme no futuro."
-            },
+            }
         ]
     }
 ];
