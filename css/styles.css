@@ -131,6 +131,18 @@
 }
 
 
+.cover-card {
+    background: #FEF6EE;
+    padding: 20px;
+    border-radius: 32px;
+    min-height: 300px;
+}
+
+.cover-card img {
+    width: 100%;
+}
+
+
 /* Alterar o gutter (espaçamento entre colunas) */
 
   .row {
