@@ -107,7 +107,7 @@ const cards = [
             {
                 tipo: "texto",
                 imagem: "images/cartao-de-credito/anuidade-cartao_01.png",
-                texto: "Cashback significa literalmente "dinheiro de volta" em inglês."
+                texto: "Cashback significa literalmente 'dinheiro de volta' em inglês."
             },
 
             {
