@@ -19,9 +19,6 @@
 
 /* --- carousel arrows --- */
 
-  .arrows {
-
-  }
 
   .carousel-control-prev,
   .carousel-control-next {
@@ -87,7 +84,7 @@
 
 .cover-card {
   background-color: #F2ECE5;
-  padding: 20px; 
+  padding: 32px; 
   border-radius: 32px; 
   height: 530px;
   box-sizing: border-box;
@@ -119,8 +116,7 @@
 .cover-card h2 {
   font-size: 36px;
   line-height: 0.94em;
-  color: #05381D; 
-  padding-top: 8px; 
+  color: #000000; 
   display: block;
   font-weight: 700;
   letter-spacing: -2%; 
@@ -139,6 +135,10 @@
   text-align: right;
 }
 
+.carousel-inner {
+  height: 428px;
+}
+
 .content-card p { 
   margin-top: 32px;
   padding: 12px;
@@ -149,6 +149,13 @@
   letter-spacing: -3%; 
 }
 
+.slide-content {
+  text-align: center;
+}
+
+.slide-text {
+  text-align: left;
+}
 
 .cover-card {
     background: #FEF6EE;
