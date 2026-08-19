@@ -7,7 +7,7 @@ const cards = [
                 tipo: "capa",
                 imagem: "images/cartao-de-credito/anuidade-cartao_01.png",
                 subtitulo: "O que é",
-                titulo: "anuidade\ndo cartão?"
+                titulo: "anuidade \n do cartão?"
             },
 
             {   
