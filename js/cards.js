@@ -5,20 +5,20 @@ const cards = [
         slides: [
             {   
                 tipo: "capa",
-                imagem: "images/cartao/01.png",
+                imagem: "images/cartao-de-credito/anuidade-cartao_01.png",
                 subtitulo: "O que é",
                 titulo: "anuidade\ndo cartão?"
             },
 
             {   
                 tipo: "texto",
-                imagem: "images/cartao/02.png",
+                imagem: "images/cartao-de-credito/anuidade-cartao_01.png",
                 texto: "É uma taxa cobrada pelo banco apenas para você ter o cartão de crédito."
             },
 
             {
                 tipo: "texto",
-                imagem: "images/cartao/03.png",
+                imagem: "images/cartao-de-credito/anuidade-cartao_01.png",
                 texto: "Outro texto aqui..."
             }
         ]
