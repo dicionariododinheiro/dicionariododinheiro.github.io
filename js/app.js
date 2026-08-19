@@ -49,14 +49,16 @@ cards.forEach((card, index) => {
 
             <div class="carousel-indicators">
 
-                ${card.imagens.map((_, slideIndex) => `
-                    
-                    <button type="button"
-                            data-bs-target="#${carouselId}"
-                            data-bs-slide-to="${slideIndex}"
-                            class="${slideIndex === 0 ? "active" : ""}">
-                    </button>
+                ${card.card.slides.map((slide, slideIndex) => `
+                    <div class="carousel-item ${slideIndex === 0 ? "active" : ""}">
 
+                        <img src="${slide.imagem}"
+                            class="d-block w-100"
+                            alt="${card.titulo}">
+
+                        <p>${slide.texto}</p>
+
+                    </div>
                 `).join("")}
 
             </div>

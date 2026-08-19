@@ -1,28 +1,38 @@
 const cards = [
     {
         titulo: "Inflação",
-        imagens: [
-            "images/inflacao/01.png",
-            "images/inflacao/02.png",
-            "images/inflacao/03.png"
+
+        slides: [
+            {
+                imagem: "images/inflacao/01.png",
+                texto: "Inflação é o aumento geral dos preços ao longo do tempo."
+            },
+
+            {
+                imagem: "images/inflacao/02.png",
+                texto: "Quando os preços sobem, o mesmo dinheiro compra menos coisas."
+            },
+
+            {
+                imagem: "images/inflacao/03.png",
+                texto: "O IPCA é o principal índice usado para medir a inflação no Brasil."
+            }
         ]
     },
 
     {
         titulo: "Juros",
-        imagens: [
-            "images/juros/01.png",
-            "images/juros/02.png"
-        ]
-    },
 
-    {
-        titulo: "Selic",
-        imagens: [
-            "images/selic/01.png",
-            "images/selic/02.png",
-            "images/selic/03.png",
-            "images/selic/04.png"
+        slides: [
+            {
+                imagem: "images/juros/01.png",
+                texto: "Juros são o custo de usar dinheiro emprestado."
+            },
+
+            {
+                imagem: "images/juros/02.png",
+                texto: "Também podem ser a remuneração de quem empresta ou investe dinheiro."
+            }
         ]
     }
 ];
