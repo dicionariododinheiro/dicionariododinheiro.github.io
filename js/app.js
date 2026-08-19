@@ -14,27 +14,88 @@ cards.forEach((card, cardIndex) => {
 
         <div id="${carouselId}" class="carousel slide">
 
+            <!-- CABEÇALHO -->
+
+            <div class="carousel-header">
+
+                <span class="carousel-title">
+                    ${card.titulo}
+                </span>
+
+                <span class="carousel-counter">
+                    1/${card.slides.length}
+                </span>
+
+            </div>
+
+
             <!-- SLIDES -->
 
             <div class="carousel-inner">
 
-                ${card.slides.map((slide, slideIndex) => `
+                ${card.slides.map((slide, slideIndex) => {
 
-                    <div class="carousel-item ${slideIndex === 0 ? "active" : ""}">
+                    let conteudoSlide = "";
 
-                        <img
-                            src="${slide.imagem}"
-                            class="d-block w-100"
-                            alt="${card.titulo}"
-                        >
+                    if (slide.tipo === "capa") {
 
-                        <p>
-                            ${slide.texto}
-                        </p>
+                        conteudoSlide = `
 
-                    </div>
+                            <div class="slide-content slide-capa">
 
-                `).join("")}
+                                <img
+                                    src="${slide.imagem}"
+                                    alt="${slide.titulo}"
+                                >
+
+                                <div class="slide-text">
+
+                                    <span class="slide-subtitulo">
+                                        ${slide.subtitulo}
+                                    </span>
+
+                                    <h2>
+                                        ${slide.titulo}
+                                    </h2>
+
+                                </div>
+
+                            </div>
+
+                        `;
+
+                    } else if (slide.tipo === "texto") {
+
+                        conteudoSlide = `
+
+                            <div class="slide-content slide-texto">
+
+                                <img
+                                    src="${slide.imagem}"
+                                    alt="${card.titulo}"
+                                >
+
+                                <p>
+                                    ${slide.texto}
+                                </p>
+
+                            </div>
+
+                        `;
+
+                    }
+
+                    return `
+
+                        <div class="carousel-item ${slideIndex === 0 ? "active" : ""}">
+
+                            ${conteudoSlide}
+
+                        </div>
+
+                    `;
+
+                }).join("")}
 
             </div>
 
@@ -85,7 +146,23 @@ cards.forEach((card, cardIndex) => {
         </div>
     `;
 
-    col.appendChild(coverCard);
 
     container.appendChild(col);
+
+    col.appendChild(coverCard);
+
+
+    // CONTADOR 1/5 → 2/5 → 3/5
+
+    const carousel = document.getElementById(carouselId);
+
+    carousel.addEventListener("slide.bs.carousel", event => {
+
+        const counter = carousel.querySelector(".carousel-counter");
+
+        counter.textContent =
+            `${event.to + 1}/${card.slides.length}`;
+
+    });
+
 });
