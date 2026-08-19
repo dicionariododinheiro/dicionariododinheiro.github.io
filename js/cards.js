@@ -85,7 +85,7 @@ const cards = [
             }
             
         ]
-    }
+    },
 
     {
         titulo: "[cartão de crédito]",
