@@ -158,7 +158,7 @@
   text-align: center;
 }
 
-.slide-texto p{
+.slide-text, .slide-texto p{
   text-align: left;
 }
 
