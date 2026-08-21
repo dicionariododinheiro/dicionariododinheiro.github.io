@@ -218,18 +218,18 @@
   
   @media (max-width: 1199px) {  /* lg */
       .container {
-          max-width: 1168px;
+          max-width: 1160px;
       }
   }
   
   @media (max-width: 1399px) { /* xl */
       .container {
-          max-width: 1368px;
+          max-width: 1360px;
       }
   }
   
   @media (min-width: 1400px) { /* xxl */
       .container {
-          max-width: 1888px;
+          max-width: 1640px;
       }
   }
