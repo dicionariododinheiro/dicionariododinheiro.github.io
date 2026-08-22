@@ -84,7 +84,6 @@
 
 .cover-card {
   border-radius: 40px; 
-  width: 280px;
   height: 432px;
   box-sizing: border-box;
   text-align: center;
@@ -98,11 +97,11 @@
 }
 
 .cover-card img {
-  width: 230px; 
+  width: 120px; 
   height: auto; 
   display: inline-block;
   padding-top: 40px;
-  padding-bottom: 32px;
+  padding-bottom: 40px;
 }
 
 .slide-subtitulo {
@@ -159,6 +158,7 @@
 
 .slide-texto {
   background-color: #00301A;
+  color:#EDEAE1;
 }
 
 .slide-content {
