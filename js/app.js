@@ -12,10 +12,8 @@ cards.forEach((card, cardIndex) => {
 
     coverCard.innerHTML = `
 
-        <div id="${carouselId}" class="carousel slide">
-
-
-            <!-- SLIDES -->
+        <div class="navigation-card">
+                    <!-- SLIDES -->
 
             <div class="carousel-inner">
 
@@ -120,19 +118,21 @@ cards.forEach((card, cardIndex) => {
 
             <div class="carousel-indicators">
 
-            ${card.slides.map((_, slideIndex) => `
+                ${card.slides.map((_, slideIndex) => `
 
-            <button
-            type="button"
-            data-bs-target="#${carouselId}"
-            data-bs-slide-to="${slideIndex}"
-            class="${slideIndex === 0 ? "active" : ""}">
-            </button>
+                <button
+                type="button"
+                data-bs-target="#${carouselId}"
+                data-bs-slide-to="${slideIndex}"
+                class="${slideIndex === 0 ? "active" : ""}">
+                </button>
 
-            `).join("")}                                       
+                `).join("")}                                       
 
             </div>
+        </div>
 
+        <div id="${carouselId}" class="carousel slide">
         </div>
     `;
 

@@ -179,6 +179,14 @@
   gap: 4px;
 }
 
+navigation-card {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  border: 1px solid #000;
+}
+
 
 
 /* Alterar o gutter (espaçamento entre colunas) */
