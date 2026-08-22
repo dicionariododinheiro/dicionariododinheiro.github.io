@@ -88,6 +88,7 @@
   height: 432px;
   box-sizing: border-box;
   text-align: center;
+  background-color: #EDEAE1;
 }
 
 .cover-card .tag { 
@@ -169,6 +170,7 @@
 
 .slide-text, .slide-texto p{
   text-align: center;
+  font-size: 16px;
 }
 
 .card-grid {

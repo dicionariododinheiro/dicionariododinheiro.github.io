@@ -3,7 +3,7 @@ const container = document.getElementById("cards-container");
 cards.forEach((card, cardIndex) => {
 
     const col = document.createElement("div");
-    col.className = "card-grid";
+    col.className = "";
 
     const coverCard = document.createElement("div");
     coverCard.className = "cover-card";
@@ -64,11 +64,6 @@ cards.forEach((card, cardIndex) => {
                         conteudoSlide = `
 
                             <div class="slide-content slide-texto">
-
-                                <img
-                                    src="${slide.imagem}"
-                                    alt="${card.titulo}"
-                                >
 
                                 <p>
                                     ${slide.texto}
