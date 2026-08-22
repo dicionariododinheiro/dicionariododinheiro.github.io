@@ -3,7 +3,7 @@ const container = document.getElementById("cards-container");
 cards.forEach((card, cardIndex) => {
 
     const col = document.createElement("div");
-    col.className = "col-sm-12";
+    col.className = "card-grid";
 
     const coverCard = document.createElement("div");
     coverCard.className = "cover-card";

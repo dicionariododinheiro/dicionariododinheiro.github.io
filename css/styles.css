@@ -171,6 +171,15 @@
   text-align: center;
 }
 
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 4px;
+}
+
+}
+
+
 
 /* Alterar o gutter (espaçamento entre colunas) */
 
@@ -186,6 +195,10 @@
           max-width: 738px;
       }
 
+      .cards-grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
   }
   
   @media (max-width: 991px) {  /* md */
@@ -193,6 +206,9 @@
           max-width: 960px;
       }
   
+      .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
   
   }
   
@@ -200,12 +216,22 @@
       .container {
           max-width: 1160px;
       }
+
+      .cards-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
   }
   
   @media (max-width: 1399px) { /* xl */
       .container {
           max-width: 1280px;
       }
+
+      .cards-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
   }
   
   @media (min-width: 1400px) { /* xxl */
