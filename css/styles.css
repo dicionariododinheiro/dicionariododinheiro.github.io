@@ -1,7 +1,7 @@
 /* ------- Global styles ------- */
 
   body { 
-    background: #FFFBF7; 
+    background: #FBFAF9; 
     font-family: 'Golos Text', sans-serif;
     color:#000000;
     line-height: 1.8em;
@@ -9,7 +9,7 @@
   }
 
   p {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.2em;
   }
 
@@ -66,13 +66,13 @@
 /* ------- home ------- */ 
 
   h1 {
-    /* font-size: calc(1.6rem + 1.4vw); */
-    font-size: 80px;
+    font-size: 40px;
     font-weight: 600;
     letter-spacing: -5%;
     display: inline-block; 
     padding: 24px 0px; 
     border: 4px 0px; 
+    color:#003122; 
   }
 
   .job-row {
@@ -83,11 +83,11 @@
 /* ------ cards ------ */ 
 
 .cover-card {
-  background-color: #F2ECE5;
-  padding: 32px; 
+  background-color: #EDEAE1;
   border-radius: 32px; 
   height: 530px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .cover-card .tag { 
@@ -106,17 +106,17 @@
 }
 
 .slide-subtitulo {
-  font-size: 28px;
-  color: #68DC20;
+  font-size: 15px;
+  color: #8F9E91;
   line-height: 0.94em;
   font-weight: 600;
   letter-spacing: -3%; 
 }
 
 .cover-card h2 {
-  font-size: 36px;
+  font-size: 24px;
   line-height: 0.94em;
-  color: #000000; 
+  color: #003122; 
   display: block;
   font-weight: 700;
   letter-spacing: -2%; 
@@ -143,15 +143,19 @@
   height: 428px;
 }
 
+.carousel-item .active {
+  background-color: #00301A;
+  padding: 32px; 
+}
+
 .content-card p { 
-  margin-top: 32px;
   padding: 12px;
-  font-size: 24px;
-  color: #05381D;
+  font-size: 16px;
+  color: #EDEAE1;
   line-height: 1.2em;
   font-weight: 600;
   letter-spacing: -3%; 
-  text-align: left;
+  text-align: center;
 }
 
 .slide-content {
@@ -159,7 +163,7 @@
 }
 
 .slide-text, .slide-texto p{
-  text-align: left;
+  text-align: center;
 }
 
 
