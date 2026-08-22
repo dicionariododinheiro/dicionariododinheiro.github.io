@@ -14,20 +14,6 @@ cards.forEach((card, cardIndex) => {
 
         <div id="${carouselId}" class="carousel slide">
 
-            <!-- CABEÇALHO -->
-
-            <div class="carousel-header">
-
-                <span class="carousel-title">
-                    ${card.titulo}
-                </span>
-
-                <span class="carousel-counter">
-                    1/${card.slides.length}
-                </span>
-
-            </div>
-
 
             <!-- SLIDES -->
 
@@ -43,6 +29,16 @@ cards.forEach((card, cardIndex) => {
 
                             <div class="slide-content slide-capa">
 
+                                <!-- CABEÇALHO -->
+
+                                <div class="carousel-header">
+
+                                    <span class="carousel-title">
+                                        ${card.titulo}
+                                    </span>
+
+                                </div>
+
                                 <img
                                     src="${slide.imagem}"
                                     alt="${slide.titulo}"
@@ -53,6 +49,25 @@ cards.forEach((card, cardIndex) => {
                                         ${slide.subtitulo}
                                     </span>
                                     <h2>${slide.titulo}</h2>
+                                    <span class="carousel-counter">
+                                        1/${card.slides.length}
+                                    </span>
+                                                <!-- BOLINHAS -->
+
+                                    <div class="carousel-indicators">
+
+                                        ${card.slides.map((_, slideIndex) => `
+
+                                            <button
+                                                type="button"
+                                                data-bs-target="#${carouselId}"
+                                                data-bs-slide-to="${slideIndex}"
+                                                class="${slideIndex === 0 ? "active" : ""}">
+                                            </button>
+
+                                        `).join("")}
+
+                                    </div>
                                 </div>
 
                             </div>
@@ -114,24 +129,6 @@ cards.forEach((card, cardIndex) => {
                 <i class="bi bi-chevron-right"></i>
 
             </button>
-
-
-            <!-- BOLINHAS -->
-
-            <div class="carousel-indicators">
-
-                ${card.slides.map((_, slideIndex) => `
-
-                    <button
-                        type="button"
-                        data-bs-target="#${carouselId}"
-                        data-bs-slide-to="${slideIndex}"
-                        class="${slideIndex === 0 ? "active" : ""}">
-                    </button>
-
-                `).join("")}
-
-            </div>
 
         </div>
     `;
