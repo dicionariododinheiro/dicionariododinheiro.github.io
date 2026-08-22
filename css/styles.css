@@ -17,52 +17,6 @@
     color:#19171A;
   }
 
-/* --- carousel arrows --- */
-
-
-  .carousel-control-prev,
-  .carousel-control-next {
-      opacity: 0;
-      transition: opacity 0.2s ease;
-      top: 50%;
-      bottom: auto;
-      transform: translateY(-50%);
-  }
-
-  .carousel:hover .carousel-control-prev,
-  .carousel:hover .carousel-control-next {
-      opacity: 1;
-      color: #05381D;
-      width: 40px;
-      height: 40px;
-      background-color: rgba(5,56,29,0.20);
-      border-radius: 100%;
-      padding: 12px;
-      box-sizing: border-box;
-      font-size: 16px; 
-  }
-
-  .carousel-indicators {
-    position: relative;
-    justify-content: left;
-    margin: 0px;
-  }
-
-  .carousel-indicators [data-bs-target] {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    border: 0;
-    background-color: rgba(5,56,29,0.30);
-  }
-
-  .carousel-indicators button.active {
-    background-color: #05381D;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-  }
-
 /* ------- home ------- */ 
 
   h1 {
@@ -179,13 +133,56 @@
   gap: 4px;
 }
 
-navigation-card {
+.navigation-card {
   position: absolute;
-  top:0;
-  left: 0;
+  bottom:0;
+  left: 50%;
   width: 100%;
   border: 1px solid #000;
 }
+
+/* --- carousel arrows --- */
+
+
+  .carousel-control-prev,
+  .carousel-control-next {
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      transform: translateY(-50%);
+  }
+
+  .carousel:hover .carousel-control-prev,
+  .carousel:hover .carousel-control-next {
+      opacity: 1;
+      color: #05381D;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(5,56,29,0.20);
+      border-radius: 16px;
+      padding: 12px;
+      box-sizing: border-box;
+      font-size: 16px; 
+  }
+
+  .carousel-indicators {
+    justify-content: left;
+    margin: 0px;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 0;
+    background-color: rgba(5,56,29,0.30);
+  }
+
+  .carousel-indicators button.active {
+    background-color: #05381D;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
 
 
 
