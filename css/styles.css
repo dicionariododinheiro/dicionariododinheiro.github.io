@@ -84,6 +84,7 @@
 
 .cover-card {
   border-radius: 40px; 
+  width:280px;
   height: 432px;
   box-sizing: border-box;
   text-align: center;
@@ -185,40 +186,11 @@
           max-width: 738px;
       }
 
-      .job-links {
-        text-align: left;
-      }
-  
-      .job-text-details {
-        padding: 32px 16px;
-      }
-  
-      .job-sections {
-        padding: 32px 0px;
-      }
-    
-      .home-text {
-        font-size: 16px;
-        padding: 40px 40px 0px 0px;
-      }
-
-      .next-project p, .project-name{
-        font-size: 32px;
-        line-height: 1em;
-        text-transform: uppercase;
-        font-weight: 400;
-      }
-
   }
   
   @media (max-width: 991px) {  /* md */
       .container {
           max-width: 960px;
-      }
-
-      .home-text {
-        font-size: 14px;
-        padding: 8px 16px 0px 0px;
       }
   
   
