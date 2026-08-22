@@ -103,19 +103,6 @@ cards.forEach((card, cardIndex) => {
                 1/${card.slides.length}
                 </span>
 
-
-                <!-- SETA DIREITA -->
-
-                <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#${carouselId}"
-                    data-bs-slide="next">
-
-                    <i class="bi bi-chevron-right"></i>
-
-                </button>
-
                 <!-- BOLINHAS -->
 
                 <div class="carousel-indicators">
@@ -132,6 +119,19 @@ cards.forEach((card, cardIndex) => {
                     `).join("")}                                       
 
                 </div>
+
+
+                <!-- SETA DIREITA -->
+
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#${carouselId}"
+                    data-bs-slide="next">
+
+                    <i class="bi bi-chevron-right"></i>
+
+                </button>
 
             </div>
 

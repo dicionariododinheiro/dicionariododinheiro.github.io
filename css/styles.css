@@ -42,7 +42,6 @@
   height: 432px;
   box-sizing: border-box;
   text-align: center;
-  background-color: #EDEAE1;
 }
 
 .cover-card .tag { 
@@ -138,6 +137,7 @@
 .navigation-card {
   position: absolute;
   padding: 32px;
+  bottom:0px;
   box-sizing: border-box;
   width: 100%;
   border: 1px solid #000;
@@ -158,7 +158,7 @@
       color: #05381D;
       width: 40px;
       height: 40px;
-      background-color: rgba(5,56,29,0.20);
+      background-color:#fff;
       border-radius: 16px;
       padding: 12px;
       box-sizing: border-box;
@@ -168,6 +168,8 @@
   .carousel-indicators {
     justify-content: left;
     margin: 0px;
+    position: absolute;
+    bottom: 0px;
   }
 
   .carousel-indicators [data-bs-target] {
