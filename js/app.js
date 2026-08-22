@@ -49,25 +49,7 @@ cards.forEach((card, cardIndex) => {
                                         ${slide.subtitulo}
                                     </span>
                                     <h2>${slide.titulo}</h2>
-                                    <span class="carousel-counter">
-                                        1/${card.slides.length}
-                                    </span>
-                                                <!-- BOLINHAS -->
 
-                                    <div class="carousel-indicators">
-
-                                        ${card.slides.map((_, slideIndex) => `
-
-                                            <button
-                                                type="button"
-                                                data-bs-target="#${carouselId}"
-                                                data-bs-slide-to="${slideIndex}"
-                                                class="${slideIndex === 0 ? "active" : ""}">
-                                            </button>
-
-                                        `).join("")}
-
-                                    </div>
                                 </div>
 
                             </div>
@@ -117,6 +99,10 @@ cards.forEach((card, cardIndex) => {
 
             </button>
 
+            <span class="carousel-counter">
+            1/${card.slides.length}
+            </span>
+
 
             <!-- SETA DIREITA -->
 
@@ -129,6 +115,23 @@ cards.forEach((card, cardIndex) => {
                 <i class="bi bi-chevron-right"></i>
 
             </button>
+
+            <!-- BOLINHAS -->
+
+            <div class="carousel-indicators">
+
+            ${card.slides.map((_, slideIndex) => `
+
+            <button
+            type="button"
+            data-bs-target="#${carouselId}"
+            data-bs-slide-to="${slideIndex}"
+            class="${slideIndex === 0 ? "active" : ""}">
+            </button>
+
+            `).join("")}                                       
+
+            </div>
 
         </div>
     `;
