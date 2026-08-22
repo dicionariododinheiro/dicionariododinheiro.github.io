@@ -12,8 +12,10 @@ cards.forEach((card, cardIndex) => {
 
     coverCard.innerHTML = `
 
-        <div class="navigation-card">
-                    <!-- SLIDES -->
+        <div id="${carouselId}" class="carousel slide">
+
+
+            <!-- SLIDES -->
 
             <div class="carousel-inner">
 
@@ -85,54 +87,54 @@ cards.forEach((card, cardIndex) => {
             </div>
 
 
-            <!-- SETA ESQUERDA -->
-
-            <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#${carouselId}"
-                data-bs-slide="prev">
-
-                <i class="bi bi-chevron-left"></i>
-
-            </button>
-
-            <span class="carousel-counter">
-            1/${card.slides.length}
-            </span>
-
-
-            <!-- SETA DIREITA -->
-
-            <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#${carouselId}"
-                data-bs-slide="next">
-
-                <i class="bi bi-chevron-right"></i>
-
-            </button>
-
-            <!-- BOLINHAS -->
-
-            <div class="carousel-indicators">
-
-                ${card.slides.map((_, slideIndex) => `
+            <div class="navigation-card">
 
                 <button
-                type="button"
-                data-bs-target="#${carouselId}"
-                data-bs-slide-to="${slideIndex}"
-                class="${slideIndex === 0 ? "active" : ""}">
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#${carouselId}"
+                    data-bs-slide="prev">
+
+                    <i class="bi bi-chevron-left"></i>
+
                 </button>
 
-                `).join("")}                                       
+                <span class="carousel-counter">
+                1/${card.slides.length}
+                </span>
+
+
+                <!-- SETA DIREITA -->
+
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#${carouselId}"
+                    data-bs-slide="next">
+
+                    <i class="bi bi-chevron-right"></i>
+
+                </button>
+
+                <!-- BOLINHAS -->
+
+                <div class="carousel-indicators">
+
+                    ${card.slides.map((_, slideIndex) => `
+
+                    <button
+                    type="button"
+                    data-bs-target="#${carouselId}"
+                    data-bs-slide-to="${slideIndex}"
+                    class="${slideIndex === 0 ? "active" : ""}">
+                    </button>
+
+                    `).join("")}                                       
+
+                </div>
 
             </div>
-        </div>
 
-        <div id="${carouselId}" class="carousel slide">
         </div>
     `;
 
