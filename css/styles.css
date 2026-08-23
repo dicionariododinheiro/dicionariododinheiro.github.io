@@ -36,7 +36,7 @@ h1 {
 .carousel-item {
   position: relative;
   overflow: hidden;
-  border-radius: 64px;
+  border-radius: 40px;
 }
 
 
@@ -63,17 +63,15 @@ h1 {
 .cover-content {
   position: absolute;
   inset: 0;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  padding: 180px 32px 100px;
+  padding: 90px 32px 48px;
 }
 
 .cover-image {
-  width: 240px;
-  height: 180px;
+  width: 128px;
+  height: 121px;
 }
 
 .cover-question {
