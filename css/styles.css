@@ -222,6 +222,15 @@ h1 {
    RESPONSIVO
 ========================= */
 
+@media (min-width: 1600px) {
+
+  #cards-container {
+    max-width: 1440px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+}
+
 @media (min-width: 1201px) {
 
   #cards-container {
@@ -235,7 +244,7 @@ h1 {
 
   #cards-container {
     max-width: 1080px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
 }
