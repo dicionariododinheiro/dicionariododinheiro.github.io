@@ -1,25 +1,14 @@
 const container = document.getElementById("cards-container");
 
-
 cards.forEach((card, cardIndex) => {
 
   const carouselId = `carousel-card-${cardIndex}`;
 
   const totalSlides = card.slides.length + 1;
 
-
-  /* =====================================================
-     CRIA O CARD
-  ===================================================== */
-
   const flashcard = document.createElement("div");
 
   flashcard.className = "flashcard";
-
-
-  /* =====================================================
-     CRIA O CAROUSEL
-  ===================================================== */
 
   flashcard.innerHTML = `
 
@@ -31,9 +20,7 @@ cards.forEach((card, cardIndex) => {
 
       <div class="carousel-inner">
 
-        <!-- =========================
-             SLIDE 1 — CAPA
-        ========================== -->
+        <!-- CAPA -->
 
         <div class="carousel-item active slide-cover">
 
@@ -41,15 +28,11 @@ cards.forEach((card, cardIndex) => {
             ${card.number}
           </div>
 
-
           <div class="cover-content">
 
-            <img
-              src="${card.cover.image}"
-              alt=""
-              class="cover-image"
-            >
-
+            <div class="cover-image">
+              <!-- imagem entra aqui depois -->
+            </div>
 
             <div class="cover-question">
 
@@ -65,12 +48,10 @@ cards.forEach((card, cardIndex) => {
 
           </div>
 
-
           <button
             class="nav-button next-button"
             data-bs-target="#${carouselId}"
             data-bs-slide="next"
-            aria-label="Próximo slide"
           >
             →
           </button>
@@ -78,13 +59,13 @@ cards.forEach((card, cardIndex) => {
         </div>
 
 
-        <!-- =========================
-             SLIDES DE CONTEÚDO
-        ========================== -->
+        <!-- SLIDES DE CONTEÚDO -->
 
         ${card.slides.map((slide, slideIndex) => {
 
           const currentSlide = slideIndex + 2;
+
+          const isLastSlide = currentSlide === totalSlides;
 
           return `
 
@@ -94,11 +75,9 @@ cards.forEach((card, cardIndex) => {
                 ${slide.title}
               </div>
 
-
               <div class="content-text">
                 ${slide.text}
               </div>
-
 
               <div class="slide-navigation">
 
@@ -106,25 +85,29 @@ cards.forEach((card, cardIndex) => {
                   class="nav-button back-button"
                   data-bs-target="#${carouselId}"
                   data-bs-slide="prev"
-                  aria-label="Slide anterior"
                 >
                   ←
                 </button>
-
 
                 <span class="slide-counter">
                   ${currentSlide} / ${totalSlides}
                 </span>
 
-
-                <button
-                  class="nav-button next-button"
-                  data-bs-target="#${carouselId}"
-                  data-bs-slide="next"
-                  aria-label="Próximo slide"
-                >
-                  →
-                </button>
+                ${
+                  !isLastSlide
+                    ? `
+                      <button
+                        class="nav-button next-button"
+                        data-bs-target="#${carouselId}"
+                        data-bs-slide="next"
+                      >
+                        →
+                      </button>
+                    `
+                    : `
+                      <div class="nav-placeholder"></div>
+                    `
+                }
 
               </div>
 
@@ -137,14 +120,7 @@ cards.forEach((card, cardIndex) => {
       </div>
 
     </div>
-
   `;
 
-
-  /* =====================================================
-     COLOCA O CARD NA PÁGINA
-  ===================================================== */
-
   container.appendChild(flashcard);
-
 });
