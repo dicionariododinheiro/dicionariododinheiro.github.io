@@ -105,36 +105,26 @@ body {
 .slide-content {
   background: #003d2c;
   color: #f2eee5;
-
-  padding: 64px 48px 40px;
+  padding: 32px;
 }
 
 .content-title {
   display: inline-block;
-
-  padding: 9px 16px;
-
-  border-radius: 12px;
-
+  padding: 6px 8px;
+  border-radius: 8px;
   background: #15533f;
   color: #a9d1be;
-
-  font-size: 20px;
+  font-size: 12px;
 }
 
 .content-text {
   position: absolute;
-
-  left: 48px;
-  right: 48px;
-
+  left: 40px;
+  right: 40px;
   top: 50%;
-
   transform: translateY(-50%);
-
   text-align: center;
-
-  font-size: 28px;
+  font-size: 16px;
   line-height: 1.4;
 }
 
@@ -161,25 +151,18 @@ body {
 
 
 .nav-button {
-  width: 80px;
-  height: 80px;
-
+  width: 40px;
+  height: 40px;
   padding: 0;
-
   border: none;
-  border-radius: 50%;
-
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  font-size: 40px;
+  font-size: 20px;
   line-height: 1;
-
   cursor: pointer;
-
   pointer-events: auto;
-
   transition:
     transform 0.2s ease,
     opacity 0.2s ease;
@@ -220,8 +203,7 @@ body {
 
 .slide-counter {
   color: #a9d1be;
-
-  font-size: 22px;
+  font-size: 12px;
   line-height: 1;
 }
 
