@@ -8,6 +8,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  font-size: 40px;
+  color:#003122;
+}
+
 #cards-container {
   width: 100%;
   display: grid;

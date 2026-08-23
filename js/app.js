@@ -36,6 +36,7 @@ cards.forEach((card, cardIndex) => {
           <div class="cover-content">
 
             <div class="cover-image">
+            <img src="${card.cover.image}"/>
             </div>
 
             <div class="cover-question">

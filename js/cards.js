@@ -1,6 +1,6 @@
 const cards = [
   {
-    number: "02",
+    number: "01",
 
     cover: {
       image: "images/cartao-de-credito/anuidade-cartao_01.png",
@@ -76,7 +76,7 @@ const cards = [
   },
 
   {
-    number: "02",
+    number: "03",
 
     cover: {
       image: "",
@@ -114,7 +114,7 @@ const cards = [
   },
 
   {
-    number: "02",
+    number: "04",
 
     cover: {
       image: "",
@@ -152,7 +152,7 @@ const cards = [
   },
 
   {
-    number: "02",
+    number: "05",
 
     cover: {
       image: "",
@@ -190,7 +190,7 @@ const cards = [
   },
 
   {
-    number: "02",
+    number: "06",
 
     cover: {
       image: "",
