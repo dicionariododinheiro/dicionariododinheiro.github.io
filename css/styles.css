@@ -8,10 +8,17 @@ body {
   font-family: 'Rubik', Helvetica, sans-serif;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 h1 {
   font-size: 40px;
+  margin: 40px 0px 64px;
   color:#003122;
   font-weight:700;
+  letter-spacing: -5%;
 }
 
 #cards-container {
@@ -38,7 +45,7 @@ h1 {
 .carousel-item {
   position: relative;
   overflow: hidden;
-  border-radius: 40px;
+  border-radius: 32px;
 }
 
 
@@ -63,7 +70,7 @@ h1 {
   background: #dce3da;
   color: #003d2c;
   font-size: 12px;
-  line-height: 0.9em;
+  line-height: 24px;
 }
 
 .cover-content {
@@ -117,7 +124,7 @@ h1 {
   background: #15533f;
   color: #a9d1be;
   font-size: 12px;
-  line-height: 0.9em;
+  line-height: 24px;
 }
 
 .content-text {
