@@ -222,46 +222,61 @@ h1 {
    RESPONSIVO
 ========================= */
 
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    #cards-container {
+      max-width: 540px;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    #cards-container {
+      max-width: 720px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    #cards-container {
+      max-width: 946px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    #cards-container {
+      max-width: 1152px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  /* Extra extra large devices (larger desktops, 1400px and up) — Bootstrap 5 */
+  @media (min-width: 1400px) {
+    #cards-container {
+      max-width: 1320px;
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+
 @media (min-width: 1600px) {
 
   #cards-container {
-    max-width: 1440px;
+    max-width: 1520px;
     grid-template-columns: repeat(5, 1fr);
   }
-
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1740px) {
 
   #cards-container {
-    max-width: 1400px;
-    grid-template-columns: repeat(5, 1fr);
+    max-width: 1720px;
+    grid-template-columns: repeat(6, 1fr);
   }
-
 }
 
-@media (max-width: 1200px) {
 
-  #cards-container {
-    max-width: 1080px;
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-}
-
-@media (max-width: 768px) {
-
-  #cards-container {
-    max-width: 680px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-}
-
-@media (max-width: 576px) {
-
-  #cards-container {
-    grid-template-columns: 1fr;
-  }
-
-}
