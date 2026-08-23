@@ -18,7 +18,7 @@ body {
 .flashcard {
   position: relative;
   width: 100%;
-  height: 530px;
+  height: 432px;
 }
 
 .flashcard .carousel,
@@ -216,6 +216,7 @@ body {
 @media (max-width: 1200px) {
 
   #cards-container {
+    max-width: 1080px;
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -224,6 +225,7 @@ body {
 @media (max-width: 768px) {
 
   #cards-container {
+    max-width: 680px;
     grid-template-columns: repeat(2, 1fr);
   }
 
