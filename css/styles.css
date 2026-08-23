@@ -142,9 +142,28 @@ body {
    NAVEGAÇÃO
 ========================= */
 
+.slide-navigation {
+  position: absolute;
+
+  left: 32px;
+  right: 32px;
+  bottom: 32px;
+
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  pointer-events: none;
+}
+
+
 .nav-button {
   width: 80px;
   height: 80px;
+
+  padding: 0;
 
   border: none;
   border-radius: 50%;
@@ -154,50 +173,55 @@ body {
   justify-content: center;
 
   font-size: 40px;
+  line-height: 1;
 
   cursor: pointer;
+
+  pointer-events: auto;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
 
-.slide-cover .next-button {
-  position: absolute;
 
-  right: 32px;
-  bottom: 32px;
-
-  background: white;
-  color: #003d2c;
+.nav-button:hover {
+  transform: scale(1.05);
 }
 
-.slide-navigation {
-  position: absolute;
 
-  left: 48px;
-  right: 48px;
-  bottom: 32px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+/* =========================
+   SETA VOLTAR
+========================= */
 
 .back-button {
   background: #064832;
   color: #467764;
+
+  opacity: 0;
+  pointer-events: none;
 }
 
-.slide-navigation .next-button {
+
+/* =========================
+   SETA AVANÇAR
+========================= */
+
+.next-button {
   background: #dfffba;
   color: #003d2c;
 }
 
+
+/* =========================
+   CONTADOR
+========================= */
+
 .slide-counter {
   color: #a9d1be;
-  font-size: 22px;
-}
 
-.nav-placeholder {
-  width: 80px;
-  height: 80px;
+  font-size: 22px;
+  line-height: 1;
 }
 
 
