@@ -4,8 +4,8 @@
 
 body {
   margin: 0;
-  background: white;
-  font-family: Arial, Helvetica, sans-serif;
+  background: #E8EBE7;
+  font-family: 'Rubik', Helvetica, sans-serif;
 }
 
 h1 {
@@ -45,7 +45,7 @@ h1 {
 ========================= */
 
 .slide-cover {
-  background: #f2eee5;
+  background: #FFFDFC;
   color: #003d2c;
 }
 
