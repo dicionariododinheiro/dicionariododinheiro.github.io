@@ -25,6 +25,7 @@ h1 {
   position: relative;
   width: 100%;
   height: 432px;
+  text-align: center;
 }
 
 .flashcard .carousel,
@@ -53,12 +54,16 @@ h1 {
 .slide-number {
   position: absolute;
   top: 32px;
-  right: 32px;
-  padding: 6px 6px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width:24px;
+  height: 24px;
   border-radius: 14px;
   background: #dce3da;
   color: #003d2c;
   font-size: 12px;
+  line-height: 0.9em;
 }
 
 .cover-content {
@@ -106,11 +111,13 @@ h1 {
 
 .content-title {
   display: inline-block;
-  padding: 6px 8px;
+  padding: 4px 12px;
+  height: 24px;
   border-radius: 8px;
   background: #15533f;
   color: #a9d1be;
   font-size: 12px;
+  line-height: 0.9em;
 }
 
 .content-text {
