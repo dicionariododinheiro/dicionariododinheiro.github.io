@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0px 24px;
   background: #E8EBE7;
   font-family: 'Rubik', Helvetica, sans-serif;
 }
@@ -257,26 +257,23 @@ h1 {
   /* Extra extra large devices (larger desktops, 1400px and up) — Bootstrap 5 */
   @media (min-width: 1400px) {
     #cards-container {
-      max-width: 1320px;
+      max-width: 1520px;
       grid-template-columns: repeat(5, 1fr);
     }
   }
 
-
-@media (min-width: 1600px) {
-
-  #cards-container {
-    max-width: 1520px;
-    grid-template-columns: repeat(5, 1fr);
+  @media (min-width: 1600px) {
+    #cards-container {
+      max-width: 1660px;
+      grid-template-columns: repeat(5, 1fr);
+    }
   }
-}
 
-@media (min-width: 1740px) {
-
-  #cards-container {
-    max-width: 1720px;
-    grid-template-columns: repeat(6, 1fr);
+  @media (min-width: 1740px) {
+    #cards-container {
+      max-width: 1720px;
+      grid-template-columns: repeat(6, 1fr);
+    }
   }
-}
 
 
