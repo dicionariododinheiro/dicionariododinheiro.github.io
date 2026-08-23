@@ -1,157 +1,150 @@
 const container = document.getElementById("cards-container");
 
+
 cards.forEach((card, cardIndex) => {
 
-    const col = document.createElement("div");
-    col.className = "";
+  const carouselId = `carousel-card-${cardIndex}`;
 
-    const coverCard = document.createElement("div");
-    coverCard.className = "cover-card";
-
-    const carouselId = `carousel-${cardIndex}`;
-
-    coverCard.innerHTML = `
-
-        <div id="${carouselId}" class="carousel slide">
+  const totalSlides = card.slides.length + 1;
 
 
-            <!-- SLIDES -->
+  /* =====================================================
+     CRIA O CARD
+  ===================================================== */
 
-            <div class="carousel-inner">
+  const flashcard = document.createElement("div");
 
-                ${card.slides.map((slide, slideIndex) => {
+  flashcard.className = "flashcard";
 
-                    let conteudoSlide = "";
 
-                    if (slide.tipo === "capa") {
+  /* =====================================================
+     CRIA O CAROUSEL
+  ===================================================== */
 
-                        conteudoSlide = `
+  flashcard.innerHTML = `
 
-                            <div class="slide-content slide-capa">
+    <div
+      id="${carouselId}"
+      class="carousel slide"
+      data-bs-interval="false"
+    >
 
-                                <!-- CABEÇALHO -->
+      <div class="carousel-inner">
 
-                                <div class="carousel-header">
+        <!-- =========================
+             SLIDE 1 — CAPA
+        ========================== -->
 
-                                    <span class="carousel-title">
-                                        ${card.titulo}
-                                    </span>
+        <div class="carousel-item active slide-cover">
 
-                                </div>
+          <div class="slide-number">
+            ${card.number}
+          </div>
 
-                                <img
-                                    src="${slide.imagem}"
-                                    alt="${slide.titulo}"
-                                >
 
-                                <div class="slide-text">
-                                    <span class="slide-subtitulo">
-                                        ${slide.subtitulo}
-                                    </span>
-                                    <h2>${slide.titulo}</h2>
+          <div class="cover-content">
 
-                                </div>
+            <img
+              src="${card.cover.image}"
+              alt=""
+              class="cover-image"
+            >
 
-                            </div>
 
-                        `;
+            <div class="cover-question">
 
-                    } else if (slide.tipo === "texto") {
+              <span>
+                ${card.cover.smallText}
+              </span>
 
-                        conteudoSlide = `
-
-                            <div class="slide-content slide-texto">
-
-                                <p>
-                                    ${slide.texto}
-                                </p>
-
-                            </div>
-
-                        `;
-
-                    }
-
-                    return `
-
-                        <div class="carousel-item ${slideIndex === 0 ? "active" : ""}">
-
-                            ${conteudoSlide}
-
-                        </div>
-
-                    `;
-
-                }).join("")}
+              <strong>
+                ${card.cover.title.join("<br>")}
+              </strong>
 
             </div>
 
-
-            <div class="navigation-card">
-
-                <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#${carouselId}"
-                    data-bs-slide="prev">
-
-                    <i class="bi bi-chevron-left"></i>
-
-                </button>
-
-                <span class="carousel-counter">
-                1/${card.slides.length}
-                </span>
-
-                <!-- BOLINHAS 
-
-                <div class="carousel-indicators">
-                    ${card.slides.map((_, slideIndex) => `
-                    <button
-                    type="button"
-                    data-bs-target="#${carouselId}"
-                    data-bs-slide-to="${slideIndex}"
-                    class="${slideIndex === 0 ? "active" : ""}">
-                    </button>
-                    `).join("")}                                       
-                </div>
-                -->
+          </div>
 
 
-                <!-- SETA DIREITA -->
-
-                <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#${carouselId}"
-                    data-bs-slide="next">
-
-                    <i class="bi bi-chevron-right"></i>
-
-                </button>
-
-            </div>
+          <button
+            class="nav-button next-button"
+            data-bs-target="#${carouselId}"
+            data-bs-slide="next"
+            aria-label="Próximo slide"
+          >
+            →
+          </button>
 
         </div>
-    `;
 
 
-    container.appendChild(col);
+        <!-- =========================
+             SLIDES DE CONTEÚDO
+        ========================== -->
 
-    col.appendChild(coverCard);
+        ${card.slides.map((slide, slideIndex) => {
+
+          const currentSlide = slideIndex + 2;
+
+          return `
+
+            <div class="carousel-item slide-content">
+
+              <div class="content-title">
+                ${slide.title}
+              </div>
 
 
-    // CONTADOR 1/5 → 2/5 → 3/5
+              <div class="content-text">
+                ${slide.text}
+              </div>
 
-    const carousel = document.getElementById(carouselId);
 
-    carousel.addEventListener("slide.bs.carousel", event => {
+              <div class="slide-navigation">
 
-        const counter = carousel.querySelector(".carousel-counter");
+                <button
+                  class="nav-button back-button"
+                  data-bs-target="#${carouselId}"
+                  data-bs-slide="prev"
+                  aria-label="Slide anterior"
+                >
+                  ←
+                </button>
 
-        counter.textContent =
-            `${event.to + 1}/${card.slides.length}`;
 
-    });
+                <span class="slide-counter">
+                  ${currentSlide} / ${totalSlides}
+                </span>
+
+
+                <button
+                  class="nav-button next-button"
+                  data-bs-target="#${carouselId}"
+                  data-bs-slide="next"
+                  aria-label="Próximo slide"
+                >
+                  →
+                </button>
+
+              </div>
+
+            </div>
+
+          `;
+
+        }).join("")}
+
+      </div>
+
+    </div>
+
+  `;
+
+
+  /* =====================================================
+     COLOCA O CARD NA PÁGINA
+  ===================================================== */
+
+  container.appendChild(flashcard);
 
 });

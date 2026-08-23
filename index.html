@@ -1,53 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="css/styles.css">
+  <title>Dicionário do Dinheiro</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Golos+Text:wght@400..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
-    <!--
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    -->
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
 
-    <meta name="description" content="Dicionário do Dinheiro - Sua wiki sobre como lidar com dinheiro no Brasil">
-    <meta name="keywords" content="dinheiro, finanças, educação financeira, money, bufunfa, grana, ganhar dinheiro, economia">
-    <meta name="robots" content="index, follow">
-
-  <title> Dicionário do Dinheiro - Sua wiki sobre como lidar com dinheiro no Brasil </title>
-  
+  <!-- Seu CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<script src="...bootstrap.bundle.min.js"></script>
 
 <body>
 
-<div class="container">
+  <main class="container-fluid">
 
-    <h1>Dicionário do Dinheiro</h1>
-
-    <div class="row job-row card-grid" id="cards-container">
-
+    <div id="cards-container" class="cards-grid">
+      <!-- Os cards serão criados pelo app.js -->
     </div>
 
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-<script src="js/cards.js"></script>
-<script src="js/app.js"></script>
+  </main>
 
 
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Dados dos cards -->
+  <script src="cards.js"></script>
+
+  <!-- Seu JavaScript -->
+  <script src="app.js"></script>
 
 </body>
+
 </html>
