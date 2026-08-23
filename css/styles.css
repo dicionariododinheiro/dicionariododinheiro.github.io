@@ -46,17 +46,13 @@ body {
 
 .slide-number {
   position: absolute;
-  top: 64px;
+  top: 32px;
   right: 32px;
-
-  padding: 10px 12px;
-
+  padding: 6px 6px;
   border-radius: 14px;
-
   background: #dce3da;
   color: #003d2c;
-
-  font-size: 20px;
+  font-size: 12px;
 }
 
 .cover-content {
@@ -82,19 +78,15 @@ body {
 
 .cover-question span {
   display: block;
-
   color: #aebbb3;
-
-  font-size: 27px;
+  font-size: 15px;
 }
 
 .cover-question strong {
   display: block;
-
   color: #003d2c;
-
-  font-size: 42px;
-  line-height: 1.05;
+  font-size: 24px;
+  line-height: 1em;
 }
 
 
@@ -211,6 +203,15 @@ body {
 /* =========================
    RESPONSIVO
 ========================= */
+
+@media (min-width: 1201px) {
+
+  #cards-container {
+    max-width: 1400px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+}
 
 @media (max-width: 1200px) {
 

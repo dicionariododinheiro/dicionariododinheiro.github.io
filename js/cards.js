@@ -3,7 +3,7 @@ const cards = [
     number: "02",
 
     cover: {
-      image: "",
+      image: "../images/cartao-de-credito/anuidade-cartao_01.png",
       smallText: "eu tenho",
       title: [
         "benefícios",
