@@ -238,6 +238,10 @@ h1 {
       max-width: 560px;
       grid-template-columns: repeat(1, 1fr);
     }
+
+    body {
+      margin: 0px;
+    }
   }
 
   /* Small devices (landscape phones, 576px and up) */
@@ -253,6 +257,10 @@ h1 {
     #cards-container {
       max-width: 720px;
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    body {
+      margin: 24px;
     }
   }
 
